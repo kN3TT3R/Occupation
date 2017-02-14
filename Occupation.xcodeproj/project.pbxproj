@@ -12,6 +12,8 @@
 		2F1E45921E4B5D21000FC344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1E45901E4B5D21000FC344 /* Main.storyboard */; };
 		2F1E45941E4B5D21000FC344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1E45931E4B5D21000FC344 /* Assets.xcassets */; };
 		2F1E45971E4B5D21000FC344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1E45951E4B5D21000FC344 /* LaunchScreen.storyboard */; };
+		2F1E459F1E4B5D5A000FC344 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E459E1E4B5D5A000FC344 /* Person.swift */; };
+		2F1E45A11E4B5D8A000FC344 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E45A01E4B5D8A000FC344 /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2F1E45931E4B5D21000FC344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F1E45961E4B5D21000FC344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F1E45981E4B5D21000FC344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F1E459E1E4B5D5A000FC344 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2F1E45A01E4B5D8A000FC344 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		2F1E458B1E4B5D21000FC344 /* Occupation */ = {
 			isa = PBXGroup;
 			children = (
-				2F1E458C1E4B5D21000FC344 /* AppDelegate.swift */,
-				2F1E458E1E4B5D21000FC344 /* ViewController.swift */,
-				2F1E45901E4B5D21000FC344 /* Main.storyboard */,
-				2F1E45931E4B5D21000FC344 /* Assets.xcassets */,
-				2F1E45951E4B5D21000FC344 /* LaunchScreen.storyboard */,
-				2F1E45981E4B5D21000FC344 /* Info.plist */,
+				2FD6417C1E51C0EF000AAFAF /* Model */,
+				2FD6417E1E51C110000AAFAF /* View */,
+				2FD6417F1E51C12C000AAFAF /* Controller */,
+				2FD6417D1E51C0FC000AAFAF /* Supporting Files */,
 			);
 			path = Occupation;
+			sourceTree = "<group>";
+		};
+		2FD6417C1E51C0EF000AAFAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E459E1E4B5D5A000FC344 /* Person.swift */,
+				2F1E45A01E4B5D8A000FC344 /* Job.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2FD6417D1E51C0FC000AAFAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E45981E4B5D21000FC344 /* Info.plist */,
+				2F1E458C1E4B5D21000FC344 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FD6417E1E51C110000AAFAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E45901E4B5D21000FC344 /* Main.storyboard */,
+				2F1E45951E4B5D21000FC344 /* LaunchScreen.storyboard */,
+				2F1E45931E4B5D21000FC344 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2FD6417F1E51C12C000AAFAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E458E1E4B5D21000FC344 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1E459F1E4B5D5A000FC344 /* Person.swift in Sources */,
 				2F1E458F1E4B5D21000FC344 /* ViewController.swift in Sources */,
 				2F1E458D1E4B5D21000FC344 /* AppDelegate.swift in Sources */,
+				2F1E45A11E4B5D8A000FC344 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +342,7 @@
 				2F1E459D1E4B5D21000FC344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
